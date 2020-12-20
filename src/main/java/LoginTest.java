@@ -1,4 +1,6 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LoginTest {
@@ -10,6 +12,8 @@ public class LoginTest {
     WebDriver driver = new ChromeDriver();
     driver.get("http://google.com");
     driver.manage().window().maximize();
+    WebElement el=driver.findElement(By.id("name"));
+    el.click();
 	}
 
 }
